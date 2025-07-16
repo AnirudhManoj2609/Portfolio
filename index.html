@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anirudh Manoj | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="img/me.jpg" />
+  <style>
+    a.nav-link,
+    a.text-decoration-none {
+      transition: color 0.3s ease;
+    }
+    a.nav-link:hover,
+    a.text-decoration-none:hover {
+      color: #198754 !important;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    button.btn:hover,
+    .btn-outline-primary:hover {
+      transform: scale(1.03);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    footer p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header class="container py-3">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h2 class="mb-0">Anirudh Manoj</h2>
+    </div>
+    <div class="col-md-6 text-md-end mt-3 mt-md-0">
+      <a href="#home" class="me-3 text-decoration-none">Home</a>
+      <a href="#about" class="me-3 text-decoration-none">About</a>
+      <a href="#skills" class="me-3 text-decoration-none">Skills</a>
+      <a href="#projects" class="me-3 text-decoration-none">Projects</a>
+      <a href="#education" class="me-3 text-decoration-none">Education</a>
+      <a href="#contact" class="text-decoration-none">Contact</a>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="bg-success p-3 m-2 text-center text-white">
+  <h1 class="display-1">Hi, I'm Anirudh Manoj</h1>
+  <p class="lead">Physics + Systems Enthusiast | Unity 3D Developer | AI Researcher | Low-Level OS Hobbyist</p>
+</section>
+
+<section id="about" class="container mt-4">
+  <h2 class="mb-3 text-center">About Me</h2>
+  <p>
+    I'm a passionate Computer Science and Physics enthusiast currently exploring how artificial intelligence, system programming, and immersive simulations can converge to solve real-world problems. My work ranges from developing VR-based social environments to crafting compilers and operating systems. I thrive at the intersection of low-level engineering and human-centered design.
+  </p>
+  <p>
+    As a member of Team-8 in the Mpower initiative, I’ve contributed to AI + sustainability projects, and my interest in entropy and quantum systems pushes me to think beyond the conventional boundaries of computing.
+  </p>
+</section>
+
+<section id="skills" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Web & Application Development</h5>
+        <ul>
+          <li>Spring Boot</li>
+          <li>React.js / Bootstrap</li>
+          <li>PostgreSQL</li>
+          <li>Docker + AWS</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>AI / Machine Learning</h5>
+        <ul>
+          <li>Python, Pandas, NumPy</li>
+          <li>TensorFlow, scikit-learn</li>
+          <li>Regression, Classification</li>
+          <li>Model Deployment</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Systems & 3D Development</h5>
+        <ul>
+          <li>Unity (C#, VR/3D)</li>
+          <li>Operating Systems (MS-DOS style)</li>
+          <li>Compilers & Parsers (Vllang)</li>
+          <li>WebSockets + Networking (NativeWebSocket)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="container py-5">
+  <h2 class="text-center mb-4">Projects</h2>
+  <div class="row d-flex justify-content-between">
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">OCD 3D World</h5>
+          <p class="card-text">
+            A Unity + Spring Boot-based multiplayer 3D environment for people with social anxiety to interact and learn. Built with WebSockets, avatars, and dynamic scene transitions.
+          </p>
+          <a href="ocd.html" class="btn btn-outline-primary mt-2">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">AAKA:ML library</h5>
+          <p class="card-text">
+            An optimized C++ library that implements several deep utility functions for training AI models as well as data mining
+          </p>
+          <a href="aaka.html" class="btn btn-outline-primary mt-2">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Vllang:Language learning platform</h5>
+          <p class="card-text">
+            A language learning platform focussed on providing a VR world for users to immerse in and interact with each other in a simulated environment of the desired geography to give a sense of living in a different culture for people to improve their language learning.
+          </p>
+          <a href="vllang.html" class="btn btn-outline-primary mt-2">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">MS-DOS Inspired OS</h5>
+          <p class="card-text">
+            A bootable OS built from scratch using assembly and C, featuring a basic shell, memory layout, and rudimentary task handling. Run on QEMU/Bochs.
+          </p>
+          <a href="msdos.html" class="btn btn-outline-primary mt-2">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Education & Courses</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Bachelor of Technology – CSD</h5>
+        <p>Federal Institute of Science and Technology</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Online Certifications</h5>
+        <ul>
+          <li>Advanced C++ certification: Udemy</li>
+          <li>Assembly language for hackers: Udemy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="container py-5 text-center">
+  <h2 class="mb-4">Contact Me</h2>
+  <p>If you'd like to collaborate, discuss research, or work on a project, feel free to reach out!</p>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+    Open Contact Form
+  </button>
+</section>
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Send a Message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">Name</label>
+            <input type="text" class="form-control" id="nameInput" required>
+          </div>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailInput" required>
+          </div>
+          <div class="mb-3">
+            <label for="messageInput" class="form-label">Message</label>
+            <textarea class="form-control" id="messageInput" rows="3" required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Send</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-4">
+  <p>&copy; 2025 Anirudh Manoj. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
