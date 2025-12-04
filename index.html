@@ -10,6 +10,10 @@
             padding: 0;
             box-sizing: border-box;
         }
+        a {
+            text-decoration: none;   /* removes underline */
+            color: #000000;          /* change to any color */
+        }
 
         :root {
             --primary: #6366f1;
@@ -498,7 +502,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Hi, I'm Anirudh Manoj</h1>
-            <p class="subtitle">Physics + Systems Enthusiast | Unity & Godot Developer | AI Researcher | Low-Level OS Hobbyist</p>
+            <p class="subtitle">Backend Spring Boot developer | Unity & Godot Developer | AI/ML Researcher | Low-level softwaring</p>
         </div>
     </section>
 
@@ -506,7 +510,8 @@
         <h2>About Me</h2>
         <div class="about-content">
             <p>I'm a passionate Computer Science and Physics enthusiast currently exploring how artificial intelligence, system programming, and immersive simulations can converge to solve real-world problems. My work ranges from developing VR-based social environments to crafting compilers and operating systems from scratch. I thrive at the intersection of low-level engineering and human-centered design.</p>
-            <p>As a member of Team-8 in the Mpower initiative, I've contributed to AI + sustainability projects, and my interest in entropy and quantum systems pushes me to think beyond the conventional boundaries of computing.</p>
+            <p>I'm also well versed and experienced in building web servers mainly via Spring-Boot.</p>
+            <p>My interests in quantum systems pushes me to think beyond the conventional boundaries of computing.</p>
             <p>My journey includes building machine learning algorithms from the ground up, diving deep into neural network architectures, and understanding the mathematical foundations that power modern AI systems.</p>
         </div>
     </section>
@@ -518,7 +523,7 @@
                 <h3>Web & Application Development</h3>
                 <ul>
                     <li>Spring Boot</li>
-                    <li>React.js / Bootstrap</li>
+                    <li>Bootstrap</li>
                     <li>PostgreSQL</li>
                     <li>Docker + AWS</li>
                 </ul>
@@ -530,7 +535,6 @@
                     <li>TensorFlow, scikit-learn</li>
                     <li>Custom ML Implementation</li>
                     <li>Neural Networks from Scratch</li>
-                    <li>Model Deployment</li>
                 </ul>
             </div>
             <div class="skill-card">
@@ -540,7 +544,6 @@
                     <li>Godot Engine (GDScript)</li>
                     <li>Operating Systems (MS-DOS style)</li>
                     <li>Compilers & Parsers</li>
-                    <li>WebSockets + Networking</li>
                 </ul>
             </div>
         </div>
@@ -567,6 +570,9 @@
                     <li>Therapeutic exercises integrated into gameplay mechanics</li>
                     <li>Privacy-focused design with optional anonymous participation</li>
                 </ul>
+                <button class="contact-btn"><a href="https://gitlab.com/csd24-25/ai-powered-dynamic-vr-interactive-space/Online-Virtual-Society.git" target="_blank" class="project-link">
+                    OCD 3D World
+                </a></button>
             </div>
 
             <div class="project-card">
@@ -583,10 +589,14 @@
                     <li>Built Logistic Regression classifier from mathematical principles</li>
                     <li>Developed multi-layer Neural Networks with backpropagation</li>
                     <li>Created activation functions (ReLU, Sigmoid, Tanh) and loss functions</li>
-                    <li>Implemented optimization algorithms (SGD, Adam, RMSprop)</li>
-                    <li>Built Convolutional Neural Network components (convolution, pooling layers)</li>
                     <li>Gained deep understanding of gradient flow, weight initialization, and regularization</li>
                 </ul>
+                <button class="contact-btn"><a href="https://github.com/AnirudhManoj2609/Neural-Network-from-scratch.git" target="_blank" class="project-link">
+                    Neural Networks
+                </a></button>
+                <button class="contact-btn"><a href="https://github.com/AnirudhManoj2609/ML-from-scratch.git" target="_blank" class="project-link">
+                    Basic ML
+                </a></button>
             </div>
 
             <div class="project-card">
@@ -594,8 +604,7 @@
                 <div class="tech-stack">
                     <span class="tech-tag">Godot Engine</span>
                     <span class="tech-tag">GDScript</span>
-                    <span class="tech-tag">VR</span>
-                    <span class="tech-tag">3D Modeling</span>
+                    <span class="tech-tag">Blender</span>
                 </div>
                 <p>An innovative VR-based language learning platform that creates immersive cultural experiences for enhanced language acquisition.</p>
                 <ul class="project-highlights">
@@ -607,6 +616,9 @@
                     <li>Progress tracking and adaptive difficulty system</li>
                     <li>Support for multiple languages with region-specific dialects</li>
                 </ul>
+                <button class="contact-btn"><a href="https://github.com/AnirudhManoj2609/VLLang.git" target="_blank" class="project-link">
+                    VLLang
+                </a></button>
             </div>
 
             <div class="project-card">
@@ -628,6 +640,9 @@
                     <li>Keyboard input handler at hardware level</li>
                     <li>Testable on QEMU and Bochs emulators</li>
                 </ul>
+                <button class="contact-btn"><a href="https://github.com/AnirudhManoj2609/OS_development.git" target="_blank" class="project-link">
+                    Operating System(MS-DOS) Based
+                </a></button>
             </div>
         </div>
     </section>
@@ -644,8 +659,12 @@
                 <p>Udemy</p>
             </div>
             <div class="education-card">
-                <h3>Assembly Language for Hackers</h3>
+                <h3>Assembly Language Fundamentals</h3>
                 <p>Udemy</p>
+            </div>
+            <div class="education-card">
+                <h3>Introduction to Artificial Intelligence</h3>
+                <p>IBM SkillsBuild</p>
             </div>
         </div>
     </section>
@@ -686,14 +705,58 @@
         <p>© 2025 Anirudh Manoj. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
+        // Initialize EmailJS with your public key
+        // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+        emailjs.init('ZgyZH4SAlqalF4xcV');
+
         function openModal() {
             document.getElementById('contactModal').style.display = 'flex';
         }
 
         function closeModal() {
             document.getElementById('contactModal').style.display = 'none';
+            // Reset form
+            document.querySelector('#contactModal form').reset();
         }
+
+        // Handle form submission
+        document.querySelector('#contactModal form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Validate fields
+            if (!name || !email || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            const sendBtn = document.querySelector('.send-btn');
+            sendBtn.textContent = 'Sending...';
+            sendBtn.disabled = true;
+            
+            // Send email using EmailJS
+            // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs
+            emailjs.send('service_109t66d', 'template_nsauoqc', {
+                name: name,
+                email: email,
+                message: message,
+                time: new Date().toLocaleString()
+            }).then(function(response) {
+                alert('Message sent successfully!');
+                closeModal();
+            }, function(error) {
+                alert('Failed to send message. Please try again.');
+                console.error('EmailJS error:', error);
+            }).finally(function() {
+                sendBtn.textContent = 'Send';
+                sendBtn.disabled = false;
+            });
+        });
 
         window.onclick = function(event) {
             const modal = document.getElementById('contactModal');
